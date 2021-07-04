@@ -152,6 +152,7 @@ namespace Книжный_магазин
             }
         }
         int k = 0;
+        int PriceCost = 0;
         private void Zakaz_Click(object sender, RoutedEventArgs e)
         {
             stZakaz.Visibility = Visibility.Visible;
@@ -161,7 +162,29 @@ namespace Книжный_магазин
             Книги S = ServiswList[ind];
             k++;
             kolKnig.Text = Convert.ToString(+k);
-           
+            int price = S.Цена;
+            PriceCost += price;
+            skidka.Text = PriceCost + "руб.";
+
+            skidkaObsh.Text = 0 + "%";
+            if(k>3 || k == 3)
+            {
+                obshcena.Text = (PriceCost -((PriceCost/100)*5)) + "руб.";
+                skidkaObsh.Text = 5 + "%";
+                skidka.TextDecorations = TextDecorations.Strikethrough;
+            }
+            if (k > 5 || k == 5)
+            {
+                obshcena.Text = (PriceCost - ((PriceCost / 100) * 10)) + "руб.";
+                skidkaObsh.Text = 10 + "%";
+                skidka.TextDecorations = TextDecorations.Strikethrough;
+            }
+            if (k > 10 || k == 10)
+            {
+                obshcena.Text = (PriceCost - ((PriceCost / 100) * 15)) + "руб.";
+                skidkaObsh.Text = 15 + "%";
+                skidka.TextDecorations = TextDecorations.Strikethrough;
+            }
         }
 
       
