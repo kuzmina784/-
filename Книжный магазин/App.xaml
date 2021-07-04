@@ -4,6 +4,74 @@
              xmlns:local="clr-namespace:Книжный_магазин"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="btnstyle" TargetType="Button">
+            <Setter  Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="2"/>
+
+
+        </Style>
+        <Style x:Key="btnstyleRed" TargetType="Button">
+            <Setter  Property="Background" Value="#04a0ff" />
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="2"/>
+
+
+        </Style>
+        <Style x:Key="TBlock" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+
+        </Style>
+        <Style x:Key="TBox" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+
+
+        </Style>
+        <Style x:Key="DateP" TargetType="DatePicker">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+
+
+        </Style>
+        <Style x:Key="TBox1" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="6"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Width" Value="25"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Opacity" Value="15"/>
+            <Setter Property="Height" Value="10"/>
+
+        </Style>
+        <Style x:Key="CBox" TargetType="ComboBox">
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Opacity" Value="15"/>
+
+        </Style>
     </Application.Resources>
 </Application>

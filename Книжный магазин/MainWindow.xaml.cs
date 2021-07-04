@@ -23,6 +23,10 @@ namespace Книжный_магазин
         public MainWindow()
         {
             InitializeComponent();
+            BD.EM = new Entities();
+            Frm.FM = FRM;
+
+            Frm.FM.Navigate(new Admin());
         }
     }
 }
